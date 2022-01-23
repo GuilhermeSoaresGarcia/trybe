@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - HTML & CSS]_
+- [ ] 3-5: _[Projeto - HTML & CSS]()_
 
 ##### Bloco 4: Introdução à JavaScript e Lógica de Programação
 
@@ -33,7 +33,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 4-2: _JavaScript - Array e loop For_
 - [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [ ] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _[Projeto - Playground Functions]_
+- [ ] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
@@ -41,11 +41,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _[Projeto - Meme Generator]()_
-- [ ] 5-6: _[Projeto - Arte com Pixels]()_
-- [ ] 5-7: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+- [ ] 5-5: _[Projeto - Arte com Pixels]()_
+- [ ] 5-6: _[Projeto - Lista de tarefas]()_
+- [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
+- [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
+- [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
 
