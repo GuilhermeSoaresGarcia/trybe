@@ -1,17 +1,57 @@
+#primaria {
+  font-style: italic;
+}
+
+#primaria h3 {
+  background-color: cyan;
+}
+
 #primaria:hover {
   border: 5px solid cyan;
+}
+
+#secundaria h3 {
+  background-color: green;
 }
 
 #secundaria:hover {
   border: 5px solid green;
 }
 
+#complementar {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  font-size: 36px;
+  font-style: italic;
+}
+
+#complementar h3 {
+  background-color: red;
+  height: 200px;
+  font-size: 36px;
+}
+
 #complementar:hover {
   border: 5px solid red;
 }
 
+#escura h3 {
+  background-color: black;
+  color: white;
+}
+
 #escura:hover {
   border: 5px solid black;
+}
+
+#clara {
+  font-style: italic;
+
+}
+
+#clara h3 {
+  background-color: yellow;
 }
 
 #clara:hover {
