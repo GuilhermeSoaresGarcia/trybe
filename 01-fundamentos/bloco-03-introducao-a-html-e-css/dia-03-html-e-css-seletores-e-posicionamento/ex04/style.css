@@ -1,0 +1,19 @@
+#primaria:hover {
+  border: 5px solid cyan;
+}
+
+#secundaria:hover {
+  border: 5px solid green;
+}
+
+#complementar:hover {
+  border: 5px solid red;
+}
+
+#escura:hover {
+  border: 5px solid black;
+}
+
+#clara:hover {
+  border: 5px solid yellow;
+}
