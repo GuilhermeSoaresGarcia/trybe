@@ -1,0 +1,68 @@
+h1, h2, h3, h4, h5, h6 {
+  color: red;
+}
+
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bolder;
+}
+
+ol li {
+  background-color: yellow;
+}
+
+/* Selecionando itens pares e ímpares 
+(fonte: https://stackoverflow.com/questions/5080699/how-can-i-style-even-and-odd-elements) */
+
+ol li:nth-child(even) {
+  color: green;
+}
+
+ol li:nth-child(odd) {
+  text-transform: uppercase;
+}
+
+/* Selecionando os 3 primeiros itens de uma lista
+(fonte: https://developer.mozilla.org/pt-BR/docs/Web/CSS/:nth-child) */
+
+#linguagens_programacao li:nth-child(-n+3) {
+  color: blue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+ul li a:hover {
+  font-weight: bolder;
+}
+
+#stackoverflow:hover {
+  color: orange;
+
+}
+
+#w3schools:hover {
+  color: green;
+}
+
+#mdn:hover {
+  color: black;
+}
+
+#devdocs:hover {
+  color: yellow;
+}
+
+#trybe:hover {
+  color: green;
+}
