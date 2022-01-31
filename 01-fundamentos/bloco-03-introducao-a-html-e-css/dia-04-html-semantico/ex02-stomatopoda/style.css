@@ -1,4 +1,23 @@
-* {
-  margin: 0px;
-  padding: 0px;
+body {
+  font-family: 'Courier New', Courier, monospace;
 }
+
+#firstsection {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid green;
+}
+
+#firstsection ul {
+  list-style: none;
+}
+
+#firstsection ul li:nth-child(odd) {
+  background-color: #ddd;
+}
+
+#scientificname {
+  font-style: italic;
+}
+
+#secondsection {}
