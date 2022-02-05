@@ -18,3 +18,4 @@ for (let numeroAtual = 2; numeroAtual <= 50; numeroAtual += 1) {
 console.log(`O maior número primo entre 0 e 50 é: ${primos[primos.length-1]}`);
 
 
+
