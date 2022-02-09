@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      const title = document.getElementById('page-title');
+      title.innerText = "The Matrix";
+
+      const secondParagraph = document.querySelector('#second-paragraph');
+      secondParagraph.style.color = 'green';
+      secondParagraph.style.backgroundColor = 'yellow';
+      secondParagraph.style.fontSize = '30px';
+      secondParagraph.style.fontWeight = 'bold';
+      secondParagraph.innerHTML = 'Criatividade? Isso non ecxiste por aqui...';
+
+const subtitle = document.querySelector('#subtitle');
+subtitle.innerText = "...mas o primeiro, porque o segundo e o terceiro são discutíveis!"      
+    </script>
+  </body>
+</html>
