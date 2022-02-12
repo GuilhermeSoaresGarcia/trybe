@@ -11,7 +11,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
 //R: porque a classe 'tech', que está aplicada no primeiro item da lista, possui o parâmetro 'transform: translateY(-20px)'
 
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
-
+// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 firstLi.addEventListener('click', addClassTechToFirstLi);
 secondLi.addEventListener('click', addClassTechToSecondLi);
@@ -35,20 +35,42 @@ function addClassTechToThirdLi() {
   thirdLi.previousElementSibling.previousElementSibling.className = '';
 }
 
-
-// 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
-
-
-
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
+input.addEventListener('keypress', insertTextOntoTechClass);
+
+function insertTextOntoTechClass() {
+  input.value.innerText = 'asd';
+}
+
+
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
+
+myWebpage.addEventListener('dblclick', doubleClickOnTop3);
+
+function doubleClickOnTop3() {
+  window.open("https://www.w3schools.com"); //Fonte: https://www.w3schools.com/jsref/met_win_open.asp
+}
+
 // 4.1. Que tal redirecionar para seu portfólio?
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+
+myWebpage.addEventListener('mouseover', changeFontColorMouseOver)
+myWebpage.addEventListener('mouseleave' , changeFontColorMouseLeave)
+
+function changeFontColorMouseOver() {
+  myWebpage.style.color = 'red';
+}
+
+function changeFontColorMouseLeave() {
+  myWebpage.style.color = 'white';  
+}
+
 
 // Segue abaixo um exemplo do uso de event.target:
 
