@@ -38,12 +38,17 @@ function addClassTechToThirdLi() {
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
-input.addEventListener('keypress', insertTextOntoTechClass);
+input.addEventListener('keyup', insertTextOntoTechClass);
 
 function insertTextOntoTechClass() {
-  input.value.innerText = 'asd';
+  let techClass = document.querySelector('.tech');
+  techClass.innerText = input.value;
 }
 
+input.addEventListener('focusout', clearInput);
+function clearInput() {
+  input.value = '';
+}
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
@@ -61,14 +66,14 @@ function doubleClickOnTop3() {
 
 
 myWebpage.addEventListener('mouseover', changeFontColorMouseOver)
-myWebpage.addEventListener('mouseleave' , changeFontColorMouseLeave)
+myWebpage.addEventListener('mouseleave', changeFontColorMouseLeave)
 
 function changeFontColorMouseOver() {
   myWebpage.style.color = 'red';
 }
 
 function changeFontColorMouseLeave() {
-  myWebpage.style.color = 'white';  
+  myWebpage.style.color = 'white';
 }
 
 
