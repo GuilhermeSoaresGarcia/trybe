@@ -39,11 +39,11 @@ createDays();
 
 // Como adicionar uma classe? Fonte: https://www.w3schools.com/howto/howto_js_add_class.asp
 
-function holidayClass() { 
+function holidayClass() {
   const individualDays = document.getElementById('days');
   let holidays = [24, 25, 31];
   for (i = 0; i < holidays.length; i += 1) {
-        individualDays.children[dezDaysList.indexOf(holidays[i])].classList.add('holiday');
+    individualDays.children[dezDaysList.indexOf(holidays[i])].classList.add('holiday');
   };
 };
 
@@ -55,10 +55,28 @@ function fridayClass() {
   const individualDays = document.getElementById('days');
   let fridays = [4, 11, 18, 25];
   for (i = 0; i < fridays.length; i += 1) {
-        individualDays.children[dezDaysList.indexOf(fridays[i])].classList.add('friday');
+    individualDays.children[dezDaysList.indexOf(fridays[i])].classList.add('friday');
   };
 };
 
 fridayClass();
+
+
+// Exercício 2:
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+//     Adicione a este botão a ID "btn-holiday" .
+//     Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+function createButtonFeriados(feriados) {
+  let divButtons = document.querySelector('.buttons-container');
+  let button = document.createElement('button'); // FONTE: https://sebhastian.com/javascript-create-button/
+  feriados = 'Feriados';
+  button.innerHTML = feriados;
+  button.id = 'btn-holiday';
+divButtons.appendChild(button);
+};
+
+createButtonFeriados();
+
 
 
