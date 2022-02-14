@@ -87,9 +87,9 @@ let buttonFeriados = document.getElementById('btn-holiday');
 holidays = document.querySelectorAll('.holiday');
 buttonFeriados.addEventListener('click', changeBackgroundColorOfHolidays);
 
-let holidaysOriginal = true; // Para verificação do estado inicial da variável e caso true, aplica o if, se não o else. Fonte: https://stackoverflow.com/a/55147567/18172843
+let holidaysBoolean = true; // Para verificação do estado inicial da variável e caso true, aplica o if, se não o else. Fonte: https://stackoverflow.com/a/55147567/18172843
 function changeBackgroundColorOfHolidays() {
-  if (holidaysOriginal) {
+  if (holidaysBoolean) {
     for (i = 0; i < holidays.length; i += 1) {
       holidays[i].style.color = 'rgb(238,238,238)';
       holidays[i].style.backgroundColor = 'green';
@@ -97,10 +97,10 @@ function changeBackgroundColorOfHolidays() {
   } else {
     for (i = 0; i < holidays.length; i += 1) {
       holidays[i].style.color = '';
-      holidays[i].style.backgroundColor = 'rgb(238,238,238)';
+      holidays[i].style.backgroundColor = '';
     };
   };
-  holidaysOriginal = !holidaysOriginal;
+  holidaysBoolean = !holidaysBoolean;
 };
 
 // Exercício 4:
@@ -129,10 +129,24 @@ createButtonSextas();
 let buttonSexta = document.getElementById('btn-friday');
 fridays = document.querySelectorAll('.friday');
 buttonSexta.addEventListener('click', changeTextOfFridays);
+let fridaysBoolean = true;
+fridaysOriginal = [];
 
 function changeTextOfFridays() {
-
+  if (fridaysBoolean) {
+    for (i = 0; i < fridays.length; i += 1) {
+      fridaysOriginal.push(fridays[i].innerHTML);      
+      fridays[i].innerHTML = 'SEXTOU!!'
+    };
+  } else {
+    for (i = 0; i < fridays.length; i += 1) {
+      fridays[i].innerHTML = fridaysOriginal[i];
+    };
+    fridaysOriginal = [];
+  };
+  fridaysBoolean = !fridaysBoolean;
 };
+
 
 
 
