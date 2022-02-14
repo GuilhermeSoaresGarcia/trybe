@@ -39,11 +39,11 @@ createDays();
 
 // Como adicionar uma classe? Fonte: https://www.w3schools.com/howto/howto_js_add_class.asp
 
-function holidayClass() { 
+function holidayClass() {
   const individualDays = document.getElementById('days');
   let holidays = [24, 25, 31];
   for (i = 0; i < holidays.length; i += 1) {
-        individualDays.children[dezDaysList.indexOf(holidays[i])].classList.add('holiday');
+    individualDays.children[dezDaysList.indexOf(holidays[i])].classList.add('holiday');
   };
 };
 
@@ -55,10 +55,102 @@ function fridayClass() {
   const individualDays = document.getElementById('days');
   let fridays = [4, 11, 18, 25];
   for (i = 0; i < fridays.length; i += 1) {
-        individualDays.children[dezDaysList.indexOf(fridays[i])].classList.add('friday');
+    individualDays.children[dezDaysList.indexOf(fridays[i])].classList.add('friday');
   };
 };
 
 fridayClass();
+
+
+// Exercício 2:
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+//     Adicione a este botão a ID "btn-holiday" .
+//     Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+function createButtonFeriados(feriados) {
+  let divButtons = document.querySelector('.buttons-container');
+  let button = document.createElement('button'); // FONTE: https://sebhastian.com/javascript-create-button/
+  feriados = 'Feriados';
+  button.innerHTML = feriados;
+  button.id = 'btn-holiday';
+  divButtons.appendChild(button);
+};
+
+createButtonFeriados();
+
+// Exercício 3:
+// Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+
+//     É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+
+let buttonFeriados = document.getElementById('btn-holiday');
+holidays = document.querySelectorAll('.holiday');
+buttonFeriados.addEventListener('click', changeBackgroundColorOfHolidays);
+
+let holidaysBoolean = true; // Para verificação do estado inicial da variável e caso true, aplica o if e muda a variável pra false, se não o else e muda a variável pra true. Fonte: https://stackoverflow.com/a/55147567/18172843
+function changeBackgroundColorOfHolidays() {
+  if (holidaysBoolean) {
+    for (i = 0; i < holidays.length; i += 1) {
+      holidays[i].style.color = 'rgb(238,238,238)';
+      holidays[i].style.backgroundColor = 'green';
+    };
+  } else {
+    for (i = 0; i < holidays.length; i += 1) {
+      holidays[i].style.color = '';
+      holidays[i].style.backgroundColor = '';
+    };
+  };
+  holidaysBoolean = !holidaysBoolean;
+};
+
+// Exercício 4:
+// Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+
+// Adicione a este botão o ID "btn-friday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+function createButtonSextas(sextas) {
+  let divButtons = document.querySelector('.buttons-container');
+  let button = document.createElement('button');
+  sextas = 'Sextas';
+  button.innerHTML = sextas;
+  button.id = 'btn-friday';
+  divButtons.appendChild(button);
+};
+
+createButtonSextas();
+
+
+// Exercício 5:
+// Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+let buttonSexta = document.getElementById('btn-friday');
+fridays = document.querySelectorAll('.friday');
+buttonSexta.addEventListener('click', changeTextOfFridays);
+let fridaysBoolean = true;
+fridaysOriginal = [];
+
+function changeTextOfFridays() {
+  if (fridaysBoolean) {
+    for (i = 0; i < fridays.length; i += 1) {
+      fridaysOriginal.push(fridays[i].innerHTML);      
+      fridays[i].innerHTML = 'SEXTOU!!'
+    };
+  } else {
+    for (i = 0; i < fridays.length; i += 1) {
+      fridays[i].innerHTML = fridaysOriginal[i];
+    };
+    fridaysOriginal = [];
+  };
+  fridaysBoolean = !fridaysBoolean;
+};
+
+
+
+
+
+
 
 
