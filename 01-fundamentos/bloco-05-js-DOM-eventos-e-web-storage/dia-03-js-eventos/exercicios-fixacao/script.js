@@ -87,7 +87,7 @@ let buttonFeriados = document.getElementById('btn-holiday');
 holidays = document.querySelectorAll('.holiday');
 buttonFeriados.addEventListener('click', changeBackgroundColorOfHolidays);
 
-let holidaysBoolean = true; // Para verificação do estado inicial da variável e caso true, aplica o if, se não o else. Fonte: https://stackoverflow.com/a/55147567/18172843
+let holidaysBoolean = true; // Para verificação do estado inicial da variável e caso true, aplica o if e muda a variável pra false, se não o else e muda a variável pra true. Fonte: https://stackoverflow.com/a/55147567/18172843
 function changeBackgroundColorOfHolidays() {
   if (holidaysBoolean) {
     for (i = 0; i < holidays.length; i += 1) {
