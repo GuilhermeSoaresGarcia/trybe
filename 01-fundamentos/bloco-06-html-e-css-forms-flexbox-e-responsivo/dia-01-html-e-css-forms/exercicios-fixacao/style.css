@@ -1,0 +1,27 @@
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Epilogue', Verdana, sans-serif;  
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(3, 107, 82);
+  color: white;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+header p {
+  color: rgb(154, 230, 202);
+}
+
+.content {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+
