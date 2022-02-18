@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Epilogue', Verdana, sans-serif;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(3, 107, 82);
+  color: white;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+header p {
+  color: rgb(154, 230, 202);
+}
+
+main {
+  width: 100%;
+}
+
+.content {
+  /* border: 1px solid black; */
+  width: 80%;
+  margin: 0 auto;
+}
+
+#name, #email {
+  width: 100%;
+  padding: 5px;
+  margin: 0px 0px 10px 0px;
+}
+
+#options {
+  width: 100%;
+}
+
+#options legend {
+  margin: 0px 0px 0px 20px;
+}
+
+#options label {
+  padding: 20px;
+  line-height: 40px;
+}
+
+#message, #schedule, #oportunities, #agreement{
+  margin: 10px 0px 0px 0px;
+}
+
+#textfield {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+#agreement label{
+  display: block;
+  width: 100%;
+}
+
+#buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#buttons button{
+  padding: 10px 30px 10px 30px;
+  margin: 0px 5px;
+}
