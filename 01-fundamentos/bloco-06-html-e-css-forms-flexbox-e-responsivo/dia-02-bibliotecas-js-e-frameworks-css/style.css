@@ -1,0 +1,42 @@
+body {
+ font-family: 'Epilogue', 'Verdana', 'sans-serif'; 
+ /* background-color: yellowgreen;  */
+}
+
+header {
+  padding: 10px 0px 1px 0px;
+  margin-bottom: 10px;
+  color: #fff;
+  background-color: rgb(3, 107, 82);
+}
+
+header p {
+  color:rgb(154, 230, 202);
+  font-style: italic;
+}
+
+/* #info {
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;  
+} */
+
+ /* #destiny { 
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 55px;
+  margin-bottom: 15px; 
+}
+
+#destiny p {
+  margin-bottom: 2px;  
+}
+
+#destiny label {
+  margin-right: 20px;
+} */
+ 
+#message {
+  height: 200px;
+  resize: none;
+}
