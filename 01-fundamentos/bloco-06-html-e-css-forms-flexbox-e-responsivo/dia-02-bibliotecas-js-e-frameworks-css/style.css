@@ -1,6 +1,6 @@
 body {
-  font-family: 'Epilogue', 'Verdana', 'sans-serif';
-  /* background-color: yellowgreen; */
+ font-family: 'Epilogue', 'Verdana', 'sans-serif'; 
+ /* background-color: yellowgreen;  */
 }
 
 header {
@@ -15,13 +15,13 @@ header p {
   font-style: italic;
 }
 
-#info {
+/* #info {
   padding-top: 15px;
   padding-left: 15px;
   margin-bottom: 15px;  
-}
+} */
 
- #destiny { 
+ /* #destiny { 
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 55px;
@@ -35,8 +35,8 @@ header p {
 #destiny label {
   margin-right: 20px;
 } */
-
+ 
 #message {
-  height: 550px;
+  height: 200px;
   resize: none;
 }

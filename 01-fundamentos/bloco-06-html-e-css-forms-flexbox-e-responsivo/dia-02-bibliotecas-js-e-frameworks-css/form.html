@@ -23,48 +23,70 @@
   </header>
 
   <main class="container">
-    <div class="form-floating">
-      <form id="form" action="" method="get">
-        <div class="form-control" id="info">
-          <label for="name">Nome completo: </label>
-          <input type="text" name="nome" id="name" minlength="10" maxlength="40">
-          <label for="email">E-mail: </label>
-          <input type="email" name="email" id="email" minlength="10" maxlength="50">
-        </div>
+    <form>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="name" placeholder="nome">
+        <label for="name">Nome</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="email" placeholder="email">
+      <label for="email">E-mail</label>
+    </div>
 
-        <div class="form-floating">
-            <div class="form-control" id="destiny">
-            <p>Destino preferido:</p>
-            <label for="cidade">Cidade <input type="radio" name="options" id="cidade"></label>
-            <label for="campo">Campo <input type="radio" name="options" id="campo"></label>
-            <label for="praia">Praia <input type="radio" name="options" id="praia"></label>
-            <label for="montanhas">Montanhas <input type="radio" name="options" id="montanhas"></label>
-          </div>
-        </div>
+    <div class="form-floating mb-3" id="destiny">
+      <p>Destino preferido:</p>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="options" id="cidade" value="cidade">
+        <label class="form-check-label" for="cidade">Cidade</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="options" id="campo" value="campo">
+        <label class="form-check-label" for="campo">Campo</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="options" id="praia" value="praia">
+        <label class="form-check-label" for="praia">Praia</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="options" id="montanhas" value="montanhas">
+        <label class="form-check-label" for="montanhas">Montanhas</label>
+      </div>
+    </div>
 
-        <div class="form-floating">
-          <textarea class="form-control" id="message"></textarea>
-          <label for="message">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
-            TrybeTrip?</label>
-        </div>
+    <div class="form-floating mb-3">
+      <textarea class="form-control" placeholder="message" id="message"></textarea>
+      <label for="message">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso
+        TrybeTrip?</label>
+    </div>
 
-        <div id="schedule">
-          <label for="date">Qual a melhor data para realizar a sua viagem? <input type="date" name="data"
-              id="date"></label>
-        </div>
+    <div class="mb-3">
+      <p><label for="date">Qual a melhor data para realizar a sua viagem?</label>
+        <input type="date" name="data" id="date">
+      </p>
+    </div>
 
-        <div id="agreement">
-          <label for="oportunities"><input type="checkbox" name="oportunities" id="oportunities"> Gostaria de receber
-            outras incríveis oportunidades oferecidas pela Trybe?</label>
-          <label for="agreement"><input type="checkbox" name="agreement" id="agreement"> Concordo que imagens das minhas
-            férias poderão ser usadas na divulgação de concursos futuros.</label>
-        </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="oportunities" id="oportunities"></input><label
+        class="form-check-label" for="oportunities">Gostaria de
+        receber
+        outras incríveis oportunidades oferecidas pela Trybe?</label>
+    </div>
 
-        <div id="buttons">
-          <button class="btn btn-success" type="submit">Enviar</button>
-          <button class="btn btn-danger" type="reset">Apagar</button>
-        </div>
-      </form>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" name="agreement" id="agreement"></input><label
+        class="form-check-label" for="agreement">Concordo que imagens das
+        minhas
+        férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </div>
+
+    <div class="position-relative" id="buttons">
+      <div class="position-absolute top-0 start-50 translate-middle-x">
+        <button class="btn btn-outline-success" type="submit">Enviar</button>
+        <button class="btn btn-outline-danger" type="reset">Apagar</button>
+      </div>
+    </div>
+
+    </form>
     </div>
   </main>
 
