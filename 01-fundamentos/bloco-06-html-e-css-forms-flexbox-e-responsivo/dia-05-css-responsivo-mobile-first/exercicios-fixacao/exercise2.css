@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container header p {
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container nav {
+  margin-bottom: 20px;
+}
+
+.container nav ul, .container nav ul li {
+  display: flex;
+  left: 0px;
+  justify-content: space-evenly;
+}
+
