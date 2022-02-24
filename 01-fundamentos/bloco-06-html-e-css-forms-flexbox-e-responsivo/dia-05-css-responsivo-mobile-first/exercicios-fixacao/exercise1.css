@@ -15,11 +15,11 @@ body {
 }
 
 article p {
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.3em;
 }
 
 h2 {}
@@ -40,8 +40,45 @@ figcaption {
   font-size: .8em;
 }
 
-/* @media screen and (min-width: 800px) {
-  article p {
-    font-size: 120%;
+@media screen and (min-width: 800px) {
+  body {
+    background-color: aqua;
+    margin: 10px;
   }
-} */
+
+  article p {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }  
+
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  main section figure {
+    flex-basis: 300px;
+    margin: 0px 25px 50px 25px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: yellowgreen;
+    margin: 5px;
+    max-width: 1500px;
+  }
+
+  article p {
+    font-size: 0.8em;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+}
