@@ -84,16 +84,10 @@ p strong {
 
 /* Exercício 3 */
 
-@media screen {
-  .cards .card:nth-of-type(3) {
-    display: flex;
-    flex-flow: row wrap;
-  }
-}
- 
-@media screen and (min-width: 650px) and (max-width: 950px) {
+@media not screen and (min-width: 650px) and (max-width: 950px) {
     .cards .card:nth-of-type(3) {
-      display: none;    
+      display: flex;
+      flex-flow: row wrap;  
     }
 }
 
