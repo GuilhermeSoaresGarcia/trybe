@@ -13,6 +13,10 @@ const showEmailList = (email, indice) => {
 // Use o método forEach chamando a callback showEmailList para apresentar os emails 
 // Adicione seu código aqui
 
+emailListInData.forEach(function (elemento, index) {
+  showEmailList(elemento, index);
+})
+
 emailListInData.forEach((elemento, index) => {
   showEmailList(elemento, index);
 })
