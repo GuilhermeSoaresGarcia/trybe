@@ -93,11 +93,13 @@ const expectedResult = [
 // 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
 // Dica: use as funções map , sort 
 
-const organizedBooks = books.map((book) => {
+
+
+const organizedBooks = (array) => array.map((book) => {
   return { age: (book.releaseYear) - (book.author.birthYear), author: book.author.name };
 }).sort((a, b) => a.age - b.age);
 
 const compare = (JSON.stringify(organizedBooks) === JSON.stringify(expectedResult)) ? `Arrays iguais` : `Arrays diferentes`;
 
-console.log(organizedBooks);
+console.log(organizedBooks(books));
 console.log(compare);
