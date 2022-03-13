@@ -62,7 +62,7 @@ const books = [
 ];
 
 const expectedResult = [
-  { 
+  {
     id: 1,
     name: 'As Crônicas de Gelo e Fogo',
     genre: 'Fantasia',
@@ -94,5 +94,6 @@ const expectedResult = [
 
 // Crie um array com todos os objetos que possuem gênero ficção científica ou fantasia.
 
-const bla = books.filter (book.genre === 'Ficção científica') => book
-console.log(bla);
+const filteredTitles = (array) => array.filter((item) => item.genre === 'Ficção Científica' || item.genre === 'Fantasia');
+
+console.log(filteredTitles(books))
