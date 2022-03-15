@@ -75,12 +75,9 @@ const estudantes = [
 
 // Agora crie uma função usando os dados dos estudantes que usamos no conteúdo do dia anterior, para mostrar na tela um relatório que diz em qual matéria o estudante foi melhor. Você usará tanto o map quanto, dentro dele, o reduce !
 
-const estudanteMapeado = (array) => array.map((estudante) => ({ nome: estudante.nome }))
-
+const estudanteMapeado = (array) => array.map((estudante) => (
+  { nome: estudante.nome,
+    materias: estudante.materias.reduce((melhorMateria, materiaAtual) => melhorMateria.nota > materiaAtual.nota ? melhorMateria : materiaAtual).name // <---- acho que entendi!
+  }))
 
 console.log(estudanteMapeado(estudantes))
-
-
-
-
-// console.log(estudantesMapeados)
