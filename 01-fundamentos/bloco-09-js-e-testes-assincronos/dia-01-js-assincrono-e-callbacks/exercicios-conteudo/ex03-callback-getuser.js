@@ -38,9 +38,9 @@ const getUser = (cb) => {
       firstName: "Ivan",
       lastName: "Ivanovich",
       nationality: "Russian",
-    }
-    cb(user);// Retorne a `callback` passada como parâmetro na função `getUser`
-    console.log(getUser(userFullName)); // Dica: você pode manter o `console.log()`
+    } 
+    // Retorne a `callback` passada como parâmetro na função `getUser`
+    console.log(cb(user)); // Dica: você pode manter o `console.log()`
   }, delay());  
 };
 
