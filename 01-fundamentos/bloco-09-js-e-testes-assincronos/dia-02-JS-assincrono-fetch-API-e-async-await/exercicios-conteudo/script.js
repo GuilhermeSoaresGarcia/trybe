@@ -3,7 +3,8 @@ const jsonInfo = `{
     "Google",
     "Twitter",
     "Facebook",
-    "etc..."
+    "etc...",
+    "uia!!!"
   ],
   "temVariasVantagens": [
     "Legível",
