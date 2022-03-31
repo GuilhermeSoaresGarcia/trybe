@@ -44,7 +44,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-1: _JavaScript - DOM e seletores_
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
-- [ ] 5-4: _JavaScript - Web Storage_
+- [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-020-b-project-pixels-art/tree/guilherme-garcia-project-pixels-art)_
 - [X] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-020-b-project-todo-list/tree/guilherme-garcia-todo-list-project)_
 - [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
@@ -81,7 +81,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
 - [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [X] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-4 ~ 9-7: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-020-b-project-shopping-cart/tree/guilherme-garcia-shopping-cart)_
+- [X] 9-4 ~ 9-7: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-020-b-project-shopping-cart/tree/guilherme-garcia-shopping-cart)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
 
