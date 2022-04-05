@@ -47,9 +47,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-020-b-project-pixels-art/tree/guilherme-garcia-project-pixels-art)_
 - [X] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-020-b-project-todo-list/tree/guilherme-garcia-todo-list-project)_
-- [ ] 5-7: _[(Bônus) Projeto - Meme Generator]()_
-- [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
