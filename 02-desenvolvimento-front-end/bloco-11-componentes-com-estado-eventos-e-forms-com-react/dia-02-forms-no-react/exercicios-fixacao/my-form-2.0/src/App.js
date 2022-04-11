@@ -1,12 +1,10 @@
-import Forms from './Formulario'
 import './App.css';
-import Counter from './Counter';
+import PersonalData from './PersonalData';
 
 function App() {
   return (
     <div className="App">
-      {/* <Forms /> */}
-      <Counter />
+      <PersonalData />      
     </div>
   );
 }
