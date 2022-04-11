@@ -88,7 +88,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 10-1: _Introdução à React_
 - [X] 10-1: _'Hello, world!' no React!_
 - [X] 10-2: _Componentes React_
-- [X] 10-3: _[Projeto - Sistema Solar]()_
+- [X] 10-3: _[Projeto - Sistema Solar](https://github.com/tryber/sd-020-b-project-solar-system/tree/guilherme-garcia-project-solar-system)_
 
 ##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
