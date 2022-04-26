@@ -138,7 +138,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 18-1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :x:
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
@@ -234,7 +234,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 34-1: _[Projeto - Trybeer V2]()_
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :x:
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
