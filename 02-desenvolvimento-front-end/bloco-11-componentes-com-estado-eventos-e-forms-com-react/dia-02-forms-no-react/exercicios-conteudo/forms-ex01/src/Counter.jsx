@@ -19,6 +19,8 @@ class Counter extends React.Component {
     return (
       <button style={{
         color: "white",
+        height: "100px",
+        width: "100px",
         backgroundColor: `${this.state.number % 2 === 0 ? 'green' : 'red'}`
       }}
         onClick={this.incrementCounter}>{this.state.number}</button>
