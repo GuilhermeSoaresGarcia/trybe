@@ -37,14 +37,14 @@ describe('testes de testes', () => {
     expect(homeTitle).toBeInTheDocument();
 
   });
-  it('deve testar uma rota inválida', () => {
+  it('deve testar uma rota inválida', async () => {
     //renderização com a gambiarra do history
     const { history } = renderWithRouter(<App />);
 
     // diferente do conteúdo do course é necessário usar esse act. Documentação: https://reactjs.org/docs/test-utils.html#act
-    act(() => {
-      history.push('pagina-inexistente');
-    })
+    act(()=>{
+      history.push('pagina-inexistente');    
+    });    
 
     // testa se a url inválida é a que está no history.push
     const { pathname } = history.location;
