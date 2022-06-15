@@ -45,7 +45,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [X] 5-5: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-020-b-project-pixels-art/tree/guilherme-garcia-project-pixels-art)_
+- [X] 5-5: _[Projeto - Arte com Pixels](https://github.com/GuilhermeSoaresGarcia/project-pixel-art)_
 - [X] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-020-b-project-todo-list/tree/guilherme-garcia-todo-list-project)_
 
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
@@ -71,7 +71,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [X] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [X] 8-5: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-6: _[Projeto - Zoo functions](https://github.com/tryber/sd-020-b-project-zoo-functions/tree/guilherme-garcia-zoo-functions-project)_
+- [X] 8-6: _[Projeto - Zoo functions](https://github.com/GuilhermeSoaresGarcia/project-zoo-functions)_
 
 ##### Bloco 9: JavaScript e Testes Assíncronos
 
