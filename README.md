@@ -80,7 +80,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 9-3: _Jest - Testes Assíncronos_
 - [X] 9-4 ~ 9-7: _[Projeto - Carrinho de Compras](https://github.com/tryber/sd-020-b-project-shopping-cart/tree/guilherme-garcia-shopping-cart)_
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 10: Introdução à React
 
@@ -136,17 +136,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 18: Projeto App de Receitas
 
-- [ ] 18-1: _[Projeto - App de Receitas]()_
+- [X] 18-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-020-b-project-recipes-app/tree/g30-fix-styles-for-presentation)_
 
-## Desenvolvimento Back-end :x:
+## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Bloco 19: Docker: Utilizando Containers
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [X] 19-1: _Introdução - Back-end & utilizando Containers - Docker_
+- [X] 19-2: _Manipulando Imagens no Docker_
+- [ ] 19-3: _Orquestrando Containers com Docker Compose_
+- [ ] 19-4: _[Projeto - Docker Todo-List]()_
 
 ##### Bloco 21: Bancos de dados relacionais
 
