@@ -142,43 +142,55 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 19: Docker: Utilizando Containers
 
-- [X] 19-1: _Introdução - Back-end & utilizando Containers - Docker_
+- [X] 19-1.1: _Introdução - Back-end_
+- [X] 19-1.2: _Utilizando Containers - Docker_
 - [X] 19-2: _Manipulando Imagens no Docker_
 - [X] 19-3: _Orquestrando Containers com Docker Compose_
-- [ ] 19-4: _[Projeto - Docker Todo-List]()_
+- [X] 19-4: _[Projeto - Docker Todo-List](https://github.com/tryber/sd-020-b-project-docker-todo-list/tree/guilherme-garcia-sd-020-b-project-docker-todo-list)_
 
-##### Bloco 21: Bancos de dados relacionais
+##### Bloco 20: Introdução à SQL
+
+- [ ] 20-1.1: _Introdução - Bancos de dados relacionais_
+- [ ] 20-1.2: _Banco de dados SQL_
+- [ ] 20-2: _Encontrando dados em um banco de dados_
+- [ ] 20-3: _Filtrando dados de forma específica_
+- [ ] 20-4: _Manipulando tabelas_
+- [ ] 20-5: _[Projeto - All For One]()_
+
+##### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Stored Routines & Subqueries_
-- [ ] 21-4: _[Projeto - Vocabulary Booster]()_
+- [ ] 21-2: _Descomplicando JOINs_
+- [ ] 21-2: _Transformando ideias em um modelo de banco de dados_
+- [ ] 21-3: _[Aula ao vivo + Projeto - One For All]()_
 
-##### Bloco 22: Bancos de dados relacionais
+##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [ ] 22-2: _Normalização, Formas Normais e Dumps_
-- [ ] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [ ] 22-1.1: _Intro - Node.js_
+- [ ] 22-1.2: _Node.js - Um motor JavaScript_
+- [ ] 22-2: _Node.js - Fluxo Assíncrono_
+- [ ] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [ ] 22-4: _Express - HTTP com Node.js_
+- [ ] 22-5: _Express - Middlewares_
+- [ ] 22-6: _[Atividades + Projeto - Talker Manager]()_
 
-##### Bloco 23: Introdução - NoSQL
+##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [ ] 23-1.1: _Introdução - Arquitetura de Software_
+- [ ] 23-1.2: _Arquitetura de Software - Camada de Model_
+- [ ] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [ ] 23-3: _Arquitetura Web - Rest e Restful_
+- [ ] 23-4: _Arquitetura de Software - Testando as Camadas_
+- [ ] 23-5: _[Projeto - Store Manager]()_
 
-##### Bloco 24: Updates
+##### Bloco 24: Node.js: ORM e Autenticação
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
-
-##### Bloco 25: Aggregation Framework
-
-- [ ] 25-1: _Aggregation Framework - Part 1_
-- [ ] 25-2: _Aggregation Framework - Part 2_
-- [ ] 25-3: _[Projeto - Aggregations]()_
+- [ ] 24-1.1: _Introdução - Node.js: ORM e Autenticação_
+- [ ] 24-1.2: _ORM - Interface da aplicação com o banco de dados_
+- [ ] 24-2: _ORM - Associations_
+- [ ] 24-3: _JWT - (JSON Web Token)_
+- [ ] 24-4: _Testando APIs com Testes de Integração_
+- [ ] 24-5: _[Projeto - API de Blogs]()_
 
 ##### Bloco 26: Intro - NodeJS
 
