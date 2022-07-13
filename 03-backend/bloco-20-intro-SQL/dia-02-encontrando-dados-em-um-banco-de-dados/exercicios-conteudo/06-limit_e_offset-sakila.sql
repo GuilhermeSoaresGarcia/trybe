@@ -1,0 +1,2 @@
+-- Qual query eu teria que montar para trazer os 10 primeiros resultados, a partir de JOHNNY? (sakila.actor)
+SELECT * FROM sakila.actor LIMIT 10 OFFSET 5;
