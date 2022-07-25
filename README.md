@@ -160,9 +160,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 21: Funções SQL, JOINs e Normalização
 
 - [X] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
-- [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _[Aula ao vivo + Projeto - One For All]()_
+- [X] 21-2: _Descomplicando JOINs e UNIONs_
+- [X] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [X] 21-4: _[Aula ao vivo + Projeto - One For All](https://github.com/tryber/sd-020-b-mysql-one-for-all/tree/guilherme-garcia-sd-020-b-mysql-one-for-all)_
 
 ##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
