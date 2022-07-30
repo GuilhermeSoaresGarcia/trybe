@@ -18,12 +18,12 @@ app.get('/recipes/:id', (req, res) => {
 
 app.get('/recipes/name/:name', (req, res) => {
   const { name } = req.params;
-  const singleItemByName = recipes
+  const itemsByName = recipes
     .filter(item => String((item.name).toLowerCase())
       .includes(String(name).toLowerCase()));
-  if (singleItemByName.length === 0) return res.status(404).json({ message: 'Não encontrado!' });
+  if (itemsByName.length === 0) return res.status(404).json({ message: 'Não encontrado!' });
 
-  res.status(200).json(singleItemByName);
+  res.status(200).json(itemsByName);
 });
 
 
