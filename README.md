@@ -194,10 +194,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 25: Deployment
 
-- [ ] 25-1.1: _Introdução - Deploy_
-- [ ] 25-1.2: _Infraestrutura - Deploy com Heroku_
-- [ ] 25-2: _Deploy Docker & Heroku_
-- [ ] 25-3: _[Projeto - Stranger Things]()_
+- [X] 25-1.1: _Introdução - Deploy_
+- [X] 25-1.2: _Infraestrutura - Deploy com Heroku_
+- [X] 25-2: _Deploy Docker & Heroku_
+- [X] 25-3.1: _[Projeto - Stranger Things Backend](https://github.com/tryber/sd-020-b-stranger-things-backend/tree/guilherme-garcia-sd-020-b-stranger-things-backend)_
+- [X] 25-3.2: _[Projeto - Stranger Things Frontend](https://github.com/tryber/sd-020-b-stranger-things-frontend/tree/guilherme-garcia-sd-020-b-stranger-things-frontend)_
 
 ##### Bloco 26: TypeScript
 
