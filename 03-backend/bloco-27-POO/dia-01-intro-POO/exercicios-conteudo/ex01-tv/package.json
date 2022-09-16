@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "tv": "ts-nd tv.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
