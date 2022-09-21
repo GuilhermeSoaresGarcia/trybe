@@ -31,6 +31,22 @@ class Order {
     this._discountPercentage = discountPercentage;
   }
 
+  get client() {
+    return this._client;
+  }
+
+  set client(client) {
+    this._client = client;
+  }
+
+  get paymentMethod() {
+    return this._paymentMethod;
+  }
+
+  set paymentMethod(payment) {
+    this._paymentMethod = payment;
+  }
+
   total(): number {
     return this._orderItems.reduce((acc, curr) => curr.price + acc, 0)
   }
