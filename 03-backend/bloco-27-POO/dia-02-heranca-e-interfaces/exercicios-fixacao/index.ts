@@ -1,4 +1,4 @@
-import Person from "./ex01";
+import Person from "./ex01"; //
 
 const person1 = new Person('Guilherme', new Date('27/12/1984'));
 
