@@ -238,7 +238,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 31: Projeto - App de Delivery
 
-- [ ] 31-1: _[Projeto - App de Delivery]()_
+- [X] 31-1: _[Projeto - App de Delivery](https://github.com/tryber/sd-020-b-project-delivery-app/tree/main-group-7)_
 
 ##### Bloco 32: MasterClass - VPS, CI/CD
 
