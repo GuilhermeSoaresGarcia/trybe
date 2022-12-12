@@ -138,7 +138,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [X] 18-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-020-b-project-recipes-app/tree/g30-fix-styles-for-presentation)_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :heavy_check_mark:
 
 ##### Bloco 19: Docker: Utilizando Containers
 
@@ -242,10 +242,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 32: MasterClass - VPS, CI/CD
 
-- [ ] 32-1: _Dia 1 - VPS_
-- [ ] 32-2: _Dia 2 de masterclasses_
+- [X] 32-1: _Dia 1 - VPS_
+- [X] 32-2: _Dia 2 de masterclasses_
 
-## Ciência da Computação :x:
+## Ciência da Computação :hourglass_flowing_sand:
 
 ##### Bloco 35: Introdução - Ciência da Computação
 
