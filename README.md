@@ -247,19 +247,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
-##### Bloco 35: Introdução - Ciência da Computação
+##### Bloco 33: Introdução à Python
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [X] 33-1: _Aprendendo Python_
+- [X] 33-2: _Entrada e Saída de Dados_
+- [X] 33-3: _Testes_
+- [X] 33-4: _[Projeto - Job Insights](https://github.com/tryber/sd-020-b-project-job-insights/tree/guilherme-garcia-job-insights)_
 
-##### Bloco 36: Python
+##### Bloco 34: Padrões de Projeto
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [X] 34-1: _P.O.O. em Python_
+- [X] 34-2: _Padrões - Iterator, Adapter, Strategy_
+- [X] 34-3: _Padrões - Decorator, Observer, Factory_
+- [X] 34-4: _[Projeto - Relatórios de Estoque](https://github.com/tryber/sd-020-b-inventory-report/tree/guilherme-garcia-inventory-report)_
 
-# [...]
+##### Bloco 35: Redes e Raspagem de Dados
+
+- [X] 35-1: _Arquitetura de redes_
+- [X] 35-2: _Raspagem de Dados_
+- [X] 35-3: _Outras Ferramentas de Raspagem de Dados_
+- [X] 35-4: _[Projeto - Tech news](https://github.com/tryber/sd-020-b-tech-news/tree/guilherme-garcia-tech-news)_
