@@ -270,7 +270,15 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 36: Algoritmos
 
-- [ ] 36-1: _Complexidade de Algoritmos_
-- [ ] 36-2: _Recursividade e Estratégias para solução de problemas_
-- [ ] 36-3: _Algoritmos de ordenação e busca_
-- [ ] 36-4: _[Projeto - Algoritmos]()_
+- [X] 36-1: _Complexidade de Algoritmos_
+- [X] 36-2: _Recursividade e Estratégias para solução de problemas_
+- [X] 36-3: _Algoritmos de ordenação e busca_
+- [X] 36-4: _[Projeto - Algoritmos](https://github.com/tryber/sd-020-b-project-algorithms/tree/guilherme-garcia-sd-020-b-project-algorithms)_
+
+##### Bloco 37: Estrutura de Dados I - Arrays, Listas, Filas e Pilhas
+
+- [X] 37-1: _Arquitetura de Computadores_
+- [X] 37-2: _Arrays_
+- [X] 37-3: _Nó e Listas Encadeadas_
+- [X] 37-4: _Pilhas e Filas_
+- [X] 37-6: _[Projeto - TING - Trybe Is Not Google](https://github.com/GuilhermeSoaresGarcia/project-ting)_
