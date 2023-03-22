@@ -245,7 +245,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 32-1: _Dia 1 - VPS_
 - [X] 32-2: _Dia 2 de masterclasses_
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :heavy_check_mark:
 
 ##### Bloco 33: Introdução à Python
 
