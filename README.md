@@ -245,21 +245,40 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 32-1: _Dia 1 - VPS_
 - [X] 32-2: _Dia 2 de masterclasses_
 
-## Ciência da Computação :hourglass_flowing_sand:
+## Ciência da Computação :heavy_check_mark:
 
-##### Bloco 35: Introdução - Ciência da Computação
+##### Bloco 33: Introdução à Python
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [X] 33-1: _Aprendendo Python_
+- [X] 33-2: _Entrada e Saída de Dados_
+- [X] 33-3: _Testes_
+- [X] 33-4: _[Projeto - Job Insights](https://github.com/tryber/sd-020-b-project-job-insights/tree/guilherme-garcia-job-insights)_
 
-##### Bloco 36: Python
+##### Bloco 34: Padrões de Projeto
 
-- [ ] 35-1: _Aprendendo Python_
-- [ ] 35-2: _Testes e Exceções_
-- [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Entrada e Saída de dados_
-- [ ] 35-5: _[Projeto - Tech news]()_
+- [X] 34-1: _P.O.O. em Python_
+- [X] 34-2: _Padrões - Iterator, Adapter, Strategy_
+- [X] 34-3: _Padrões - Decorator, Observer, Factory_
+- [X] 34-4: _[Projeto - Relatórios de Estoque](https://github.com/tryber/sd-020-b-inventory-report/tree/guilherme-garcia-inventory-report)_
 
-# [...]
+##### Bloco 35: Redes e Raspagem de Dados
+
+- [X] 35-1: _Arquitetura de redes_
+- [X] 35-2: _Raspagem de Dados_
+- [X] 35-3: _Outras Ferramentas de Raspagem de Dados_
+- [X] 35-4: _[Projeto - Tech news](https://github.com/tryber/sd-020-b-tech-news/tree/guilherme-garcia-tech-news)_
+
+##### Bloco 36: Algoritmos
+
+- [X] 36-1: _Complexidade de Algoritmos_
+- [X] 36-2: _Recursividade e Estratégias para solução de problemas_
+- [X] 36-3: _Algoritmos de ordenação e busca_
+- [X] 36-4: _[Projeto - Algoritmos](https://github.com/tryber/sd-020-b-project-algorithms/tree/guilherme-garcia-sd-020-b-project-algorithms)_
+
+##### Bloco 37: Estrutura de Dados I - Arrays, Listas, Filas e Pilhas
+
+- [X] 37-1: _Arquitetura de Computadores_
+- [X] 37-2: _Arrays_
+- [X] 37-3: _Nó e Listas Encadeadas_
+- [X] 37-4: _Pilhas e Filas_
+- [X] 37-6: _[Projeto - TING - Trybe Is Not Google](https://github.com/GuilhermeSoaresGarcia/project-ting)_
