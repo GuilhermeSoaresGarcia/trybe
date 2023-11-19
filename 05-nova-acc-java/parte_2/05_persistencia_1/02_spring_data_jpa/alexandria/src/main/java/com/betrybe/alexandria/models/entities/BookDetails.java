@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "book_details")
-public class BookDetail {
+public class BookDetails {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,10 +23,10 @@ public class BookDetail {
   private String year;
   private String isbn;
 
-  public BookDetail() {
+  public BookDetails() {
   }
 
-  public BookDetail(Long id, String summary, int pageCount, String year, String isbn) {
+  public BookDetails(Long id, String summary, int pageCount, String year, String isbn) {
     this.id = id;
     this.summary = summary;
     this.pageCount = pageCount;
