@@ -1,9 +1,9 @@
 package com.betrybe.alexandria.controllers.dto;
 
-import com.betrybe.alexandria.models.entities.Book;
+import com.betrybe.alexandria.models.entities.Publisher;
 
 public record PublisherDTO(Long id, String name, String address) {
-  public Book toPublisher() {
-    return new Book(id, name, address);
+  public Publisher toPublisher() {
+    return new Publisher(id, name, address);
   }
 }
