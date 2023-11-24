@@ -21,7 +21,7 @@ public class BookDetails {
   private String summary;
   
   @Column(name = "page_count")
-  private int pageCount;
+  private Integer pageCount;
   
   private String year;
   private String isbn;
@@ -34,7 +34,7 @@ public class BookDetails {
   public BookDetails() {
   }
 
-  public BookDetails(Long id, String summary, int pageCount, String year, String isbn, Book book) {
+  public BookDetails(Long id, String summary, Integer pageCount, String year, String isbn, Book book) {
     this.id = id;
     this.summary = summary;
     this.pageCount = pageCount;
@@ -59,11 +59,11 @@ public class BookDetails {
     this.summary = summary;
   }
 
-  public int getPageCount() {
+  public Integer getPageCount() {
     return pageCount;
   }
 
-  public void setPageCount(int pageCount) {
+  public void setPageCount(Integer pageCount) {
     this.pageCount = pageCount;
   }
 
