@@ -1,9 +1,11 @@
 package com.betrybe.alexandria.models.entities;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -13,16 +15,21 @@ public class Book {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+  
   private String title;
   private String genre;
+
+  @OneToOne(cascade = CascadeType.ALL, mappedBy = "book")
+  private BookDetails bookDetails;
 
   public Book() {
   }
 
-  public Book(Long id, String title, String genre) {
+  public Book(Long id, String title, String genre, BookDetails bookDetails) {
     this.id = id;
     this.title = title;
     this.genre = genre;
+    this.bookDetails = bookDetails;
   }
 
   public Long getId() {
@@ -47,6 +54,14 @@ public class Book {
 
   public void setGenre(String genre) {
     this.genre = genre;
+  }
+
+  public BookDetails getBookDetails() {
+    return bookDetails;
+  }
+
+  public void setBookDetails(BookDetails bookDetails) {
+    this.bookDetails = bookDetails;
   }
 
 }
