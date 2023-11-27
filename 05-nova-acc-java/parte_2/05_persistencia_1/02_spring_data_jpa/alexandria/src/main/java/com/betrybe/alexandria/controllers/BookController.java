@@ -92,7 +92,6 @@ public class BookController {
   }
 
   // BookDetails
-
   @PostMapping("/{bookId}/details")
   public ResponseEntity<ResponseDTO<BookDetails>> createBookDetails(@PathVariable Long bookId,
       @RequestBody BookDetailsDTO bookDetailsDTO) {
@@ -110,15 +109,15 @@ public class BookController {
     return ResponseEntity.status(HttpStatus.CREATED).body(responseDTO);
   }
 
-  @PutMapping("/{bookId}/details/{detailsId}")
-  public ResponseEntity<ResponseDTO<BookDetails>> editBookDetails(@PathVariable Long detailsId,
+  @PutMapping("/{bookId}/details")
+  public ResponseEntity<ResponseDTO<BookDetails>> editBookDetails(@PathVariable Long bookId,
       @RequestBody BookDetailsDTO bookDetailsDTO) {
-    Optional<BookDetails> optionalBookDetails = bookService.updateBookDetails(detailsId,
+    Optional<BookDetails> optionalBookDetails = bookService.updateBookDetails(bookId,
         bookDetailsDTO.toBookDetails());
 
     if (optionalBookDetails.isEmpty()) {
       ResponseDTO<BookDetails> responseDTO = new ResponseDTO<BookDetails>(
-          "Não foi encontrado o detalhamento do livro de ID " + detailsId, null);
+          "Não foi encontrado o detalhamento do livro de ID " + bookId, null);
       return ResponseEntity.status(HttpStatus.NOT_FOUND).body(responseDTO);
     }
 
