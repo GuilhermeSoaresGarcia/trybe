@@ -92,7 +92,8 @@ public class BookController {
             book.getTitle(),
             book.getGenre(),
             book.getBookDetails(),
-            book.getPublisher()))
+            book.getPublisher(),
+            book.getAuthors()))
         .collect(Collectors.toList());
   }
 
@@ -189,5 +190,46 @@ public class BookController {
     return ResponseEntity
         .status(HttpStatus.ACCEPTED)
         .body(new ResponseDTO<Book>("Editora removida do livro de ID " + bookId, optionalBook.get()));
+  }
+
+  @PutMapping("/{bookId}/authors/{authorId}")
+  public ResponseEntity<ResponseDTO<Book>> setAuthor(@PathVariable Long bookId, @PathVariable Long authorId) {
+    Optional<Book> optionalBook = bookService.setAuthor(bookId, authorId);
+
+    if (optionalBook.isEmpty()) {
+      return ResponseEntity
+          .status(HttpStatus.NOT_FOUND)
+          .body(new ResponseDTO<Book>(
+              "Não foi possível associar o livro de ID " + bookId + " ao autor de ID " + authorId, null));
+
+    }
+    return ResponseEntity.ok(new ResponseDTO<Book>(
+        "Livro de ID "
+            + bookId
+            + " associado ao autor de ID "
+            + authorId
+            + " com sucesso!",
+        optionalBook.get()));
+  }
+
+  @DeleteMapping("/{bookId}/authors/{authorId}")
+  public ResponseEntity<ResponseDTO<Book>> removeAuthorFromBook(@PathVariable Long bookId,
+      @PathVariable Long authorId) {
+    Optional<Book> optionalBook = bookService.removeAuthorFromBook(bookId, authorId);
+
+    if (optionalBook.isEmpty()) {
+      return ResponseEntity
+          .status(HttpStatus.INTERNAL_SERVER_ERROR)
+          .body(new ResponseDTO<Book>(
+              "Não foi possível remover o autor de ID " + authorId + " do livro de ID " + bookId, null));
+
+    }
+    return ResponseEntity.status(HttpStatus.ACCEPTED).body(new ResponseDTO<Book>(
+        "Autor de ID "
+            + authorId
+            + " desassociado do livro de ID "
+            + bookId
+            + " com sucesso!",
+        optionalBook.get()));
   }
 }
