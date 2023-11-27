@@ -1,12 +1,13 @@
 package com.betrybe.alexandria.services;
 
+import com.betrybe.alexandria.models.entities.Author;
 import com.betrybe.alexandria.models.entities.Book;
 import com.betrybe.alexandria.models.entities.BookDetails;
 import com.betrybe.alexandria.models.entities.Publisher;
+import com.betrybe.alexandria.models.repositories.AuthorRepository;
 import com.betrybe.alexandria.models.repositories.BookDetailsRepository;
 import com.betrybe.alexandria.models.repositories.BookRepository;
 import com.betrybe.alexandria.models.repositories.PublisherRepository;
-
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +19,15 @@ public class BookService {
   private final BookRepository bookRepository;
   private final BookDetailsRepository bookDetailsRepository;
   private final PublisherRepository publisherRepository;
+  private final AuthorRepository authorRepository;
 
   @Autowired
   public BookService(BookRepository bookRepository, BookDetailsRepository bookDetailsRepository,
-      PublisherRepository publisherRepository) {
+      PublisherRepository publisherRepository, AuthorRepository authorRepository) {
     this.bookRepository = bookRepository;
     this.bookDetailsRepository = bookDetailsRepository;
     this.publisherRepository = publisherRepository;
+    this.authorRepository = authorRepository;
   }
 
   public Book insertBook(Book book) {
@@ -150,5 +153,44 @@ public class BookService {
     Book bookWithoutPublisher = bookRepository.save(book);
 
     return Optional.of(bookWithoutPublisher);
+  }
+
+  public Optional<Book> setAuthor(Long bookId, Long authorId) {
+    Optional<Book> optionalBook = bookRepository.findById(bookId);
+    if (optionalBook.isEmpty()) {
+      return Optional.empty();
+    }
+
+    Optional<Author> optionalAuthor = authorRepository.findById(authorId);
+    if (optionalAuthor.isEmpty()) {
+      return Optional.empty();
+    }
+
+    Book book = optionalBook.get();
+    Author author = optionalAuthor.get();
+
+    book.getAuthors().add(author);
+    Book newBook = bookRepository.save(book);
+
+    return Optional.of(newBook);
+  }
+
+  public Optional<Book> removeAuthorFromBook(Long bookId, Long authorId) {
+    Optional<Book> optionalBook = bookRepository.findById(bookId);
+    if (optionalBook.isEmpty()) {
+      return Optional.empty();
+    }
+
+    Optional<Author> optionalAuthor = authorRepository.findById(authorId);
+    if (optionalAuthor.isEmpty()) {
+      return Optional.empty();
+    }
+
+    Book book = optionalBook.get();
+    Author author = optionalAuthor.get();
+    book.getAuthors().remove(author);
+
+    Book bookWithoutAuthor = bookRepository.save(book);
+    return Optional.of(bookWithoutAuthor);
   }
 }
