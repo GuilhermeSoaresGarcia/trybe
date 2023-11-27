@@ -87,7 +87,12 @@ public class BookController {
   public List<BookDTO> getAllBooks() {
     List<Book> allBooks = bookService.getAllBooks();
     return allBooks.stream()
-        .map((book) -> new BookDTO(book.getId(), book.getTitle(), book.getGenre(), book.getBookDetails()))
+        .map((book) -> new BookDTO(
+            book.getId(),
+            book.getTitle(),
+            book.getGenre(),
+            book.getBookDetails(),
+            book.getPublisher()))
         .collect(Collectors.toList());
   }
 
@@ -156,4 +161,33 @@ public class BookController {
     return ResponseEntity.ok(responseDTO);
   }
 
+  @PutMapping("/{bookId}/publisher/{publisherId}")
+  public ResponseEntity<ResponseDTO<Book>> setPublisherToBook(@PathVariable Long bookId,
+      @PathVariable Long publisherId) {
+    Optional<Book> optionalBook = bookService.setPublisherToBook(bookId, publisherId);
+
+    if (optionalBook.isEmpty()) {
+      return ResponseEntity
+          .status(HttpStatus.NOT_FOUND)
+          .body(new ResponseDTO<Book>("Não foi possível localizar o livro de ID " + bookId, null));
+    }
+
+    return ResponseEntity
+        .ok(new ResponseDTO<Book>("Editora vinculada ao livro com sucesso!", optionalBook.get()));
+  }
+
+  @DeleteMapping("/{bookId}/publisher")
+  public ResponseEntity<ResponseDTO<Book>> removePublisherFromBook(@PathVariable Long bookId) {
+    Optional<Book> optionalBook = bookService.removePublisherFromBook(bookId);
+
+    if (optionalBook.isEmpty()) {
+      return ResponseEntity
+          .status(HttpStatus.INTERNAL_SERVER_ERROR)
+          .body(new ResponseDTO<Book>("Não foi possível remover a editora do livro de ID " + bookId, null));
+    }
+
+    return ResponseEntity
+        .status(HttpStatus.ACCEPTED)
+        .body(new ResponseDTO<Book>("Editora removida do livro de ID " + bookId, optionalBook.get()));
+  }
 }
